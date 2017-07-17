@@ -1,17 +1,14 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/Guest/Desktop/creature_review_api/spec/requests/get_reviews_spec.rb": [
+      "/Users/Guest/Desktop/creature_review_api/spec/requests/delete_reviews_spec.rb": [
         1,
-        null,
-        1,
-        3,
-        null,
-        3,
         null,
         1,
         1,
         null,
+        2,
+        2,
         null,
         1,
         1,
@@ -278,7 +275,7 @@
       "/Users/Guest/Desktop/creature_review_api/app/controllers/concerns/response.rb": [
         1,
         1,
-        6,
+        7,
         null,
         null
       ],
@@ -291,8 +288,8 @@
         null,
         null,
         1,
-        0,
-        0,
+        1,
+        1,
         null,
         null,
         1,
@@ -310,9 +307,9 @@
         null,
         null,
         1,
-        0,
-        0,
-        0,
+        1,
+        1,
+        1,
         null,
         null,
         null,
@@ -364,6 +361,24 @@
         1,
         null
       ],
+      "/Users/Guest/Desktop/creature_review_api/spec/requests/get_reviews_spec.rb": [
+        1,
+        null,
+        1,
+        3,
+        3,
+        null,
+        3,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/Guest/Desktop/creature_review_api/spec/requests/post_reviews_spec.rb": [
         1,
         null,
@@ -390,6 +405,6 @@
         null
       ]
     },
-    "timestamp": 1500316375
+    "timestamp": 1500317638
   }
 }

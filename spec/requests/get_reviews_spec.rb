@@ -1,6 +1,7 @@
 require 'rails_helper'
 
 describe "get all reviews route", :type => :request do
+  before { Review.destroy_all }
   let!(:reviews) { FactoryGirl.create_list(:review, 20)}
 
   before { get '/reviews'}
