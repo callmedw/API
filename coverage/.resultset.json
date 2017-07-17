@@ -374,6 +374,20 @@
         null,
         null
       ],
+      "/Users/Guest/Desktop/creature_review_api/spec/requests/get_reviews_exceptions_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null
+      ],
       "/Users/Guest/Desktop/creature_review_api/spec/requests/get_reviews_spec.rb": [
         1,
         null,
@@ -432,6 +446,6 @@
         null
       ]
     },
-    "timestamp": 1500318007
+    "timestamp": 1500322661
   }
 }
