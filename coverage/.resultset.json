@@ -275,7 +275,7 @@
       "/Users/Guest/Desktop/creature_review_api/app/controllers/concerns/response.rb": [
         1,
         1,
-        7,
+        8,
         null,
         null
       ],
@@ -288,8 +288,8 @@
         null,
         null,
         1,
-        1,
-        1,
+        2,
+        2,
         null,
         null,
         1,
@@ -361,6 +361,19 @@
         1,
         null
       ],
+      "/Users/Guest/Desktop/creature_review_api/spec/requests/get_individual_review_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        2,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/Guest/Desktop/creature_review_api/spec/requests/get_reviews_spec.rb": [
         1,
         null,
@@ -405,6 +418,6 @@
         null
       ]
     },
-    "timestamp": 1500317638
+    "timestamp": 1500317788
   }
 }
