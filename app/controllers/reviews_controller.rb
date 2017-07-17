@@ -5,6 +5,16 @@ class ReviewsController < ApplicationController
     json_response(@reviews)
   end
 
+  def author
+    @reviews = Review.author(params[:author])
+    json_response(@reviews)
+  end
+
+  def creature
+    @reviews = Review.creature(params[:creature])
+    json_response(@reviews)
+  end
+
   def show
     @review = Review.find(params[:id])
     json_response(@review)

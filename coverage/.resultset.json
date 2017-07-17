@@ -1,18 +1,13 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/Guest/Desktop/creature_review_api/spec/requests/delete_reviews_spec.rb": [
+      "/Users/Guest/Desktop/creature_review_api/spec/models/review_spec.rb": [
         1,
         null,
         1,
-        1,
-        null,
         2,
         2,
-        null,
-        1,
-        1,
-        null,
+        2,
         null
       ],
       "/Users/Guest/Desktop/creature_review_api/spec/rails_helper.rb": [
@@ -72,6 +67,13 @@
         null,
         1,
         null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
         null,
         null
       ],
@@ -288,6 +290,16 @@
         null,
         null,
         1,
+        0,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null,
+        1,
         4,
         3,
         null,
@@ -339,6 +351,8 @@
       "/Users/Guest/Desktop/creature_review_api/app/models/review.rb": [
         1,
         1,
+        1,
+        1,
         null
       ],
       "/Users/Guest/Desktop/creature_review_api/spec/factories.rb": [
@@ -353,12 +367,31 @@
       "/Users/Guest/Desktop/creature_review_api/config/routes.rb": [
         1,
         1,
+        1,
+        1,
+        1,
+        null,
+        null,
         null,
         null
       ],
       "/Users/Guest/Desktop/creature_review_api/spec/support/factory_girl.rb": [
         1,
         1,
+        null
+      ],
+      "/Users/Guest/Desktop/creature_review_api/spec/requests/delete_reviews_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        2,
+        2,
+        null,
+        1,
+        1,
+        null,
         null
       ],
       "/Users/Guest/Desktop/creature_review_api/spec/requests/get_individual_review_spec.rb": [
@@ -459,6 +492,6 @@
         null
       ]
     },
-    "timestamp": 1500322840
+    "timestamp": 1500329924
   }
 }
