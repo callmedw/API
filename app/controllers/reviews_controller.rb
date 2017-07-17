@@ -1,4 +1,4 @@
-class ReviewsControlle < ApplicationController
+class ReviewsController < ApplicationController
 
   def index
     @reviews = {"review": "This creature is bomb!"}
