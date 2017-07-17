@@ -166,7 +166,7 @@ DEPENDENCIES
   pg (~> 0.18)
   pry
   puma (~> 3.7)
-  rails (~> 5.1.2)
+  rails
   rspec-rails
   simplecov
   spring
