@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  devise_for :users
+  post 'auth_user' => 'authentication#authenticate_user'
+
   resources :reviews do
     get 'page/:page', action: :index, on: :collection
     collection do

@@ -1,4 +1,5 @@
 class ReviewsController < ApplicationController
+  before_action :authenticate_request!
 
   def index
     @reviews = Review.all.page params[:page]

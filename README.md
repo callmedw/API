@@ -17,6 +17,8 @@ An api that will return reviews on various creatures.
 
 * [Serializer](https://blog.engineyard.com/2015/active-model-serializers)
 * [Rack-Attack](http://blog.hayleyanderson.us/2015/06/05/using-and-testing-rack-attack-to-improve-the-security-of-your-rails-app/)
+* [kaminari](https://github.com/kaminari/kaminari)
+* [authentication](https://www.sitepoint.com/introduction-to-using-jwt-in-rails/)
 
 ## Installation
 
