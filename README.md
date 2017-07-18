@@ -22,3 +22,7 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+## Sources
+
+* [Serializer](https://blog.engineyard.com/2015/active-model-serializers)

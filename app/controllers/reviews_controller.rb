@@ -2,7 +2,7 @@ class ReviewsController < ApplicationController
 
   def index
     @reviews = Review.all
-    json_response(@reviews)
+    render json: @reviews
   end
 
   def author
