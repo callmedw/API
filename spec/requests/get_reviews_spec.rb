@@ -7,7 +7,7 @@ describe "get all reviews route", :type => :request do
   before { get '/reviews'}
 
   it 'returns all reviews' do
-    expect(JSON.parse(response.body).size).to eq(20)
+    expect(JSON.parse(response.body).size).to eq(5)
   end
 
   it 'returns status code 200' do

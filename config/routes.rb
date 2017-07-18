@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :reviews do
+    get 'page/:page', action: :index, on: :collection
     collection do
       get :author
       get :creature

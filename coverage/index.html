@@ -14,26 +14,26 @@
       <img src="./assets/0.10.1/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2017-07-18T08:06:02-07:00">2017-07-18T08:06:02-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2017-07-18T11:27:42-07:00">2017-07-18T11:27:42-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">97.63%</span></span>
+    (<span class="covered_percent"><span class="green">97.81%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.26
+         1.24
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>32</b> files in total.
-    <b>169</b> relevant lines. 
-    <span class="green"><b>165</b> lines covered</span> and
+    <b>34</b> files in total.
+    <b>183</b> relevant lines. 
+    <span class="green"><b>179</b> lines covered</span> and
     <span class="red"><b>4</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -133,9 +133,19 @@
       <tr>
         <td class="strong"><a href="#83164897f0904529dab0d391aa20f5f2e2a776fb" class="src_link" title="app/models/review.rb">app/models/review.rb</a></td>
         <td class="green strong">100.0 %</td>
+        <td>6</td>
         <td>5</td>
-        <td>4</td>
-        <td>4</td>
+        <td>5</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#e9ae5be176e48d5b528839819f0eb3017b3ba465" class="src_link" title="app/serializers/review_serializer.rb">app/serializers/review_serializer.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>3</td>
+        <td>2</td>
+        <td>2</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -231,6 +241,16 @@
       </tr>
       
       <tr>
+        <td class="strong"><a href="#8e463e714d3fe779bb4ebe90a424341ad6c64760" class="src_link" title="config/initializers/kaminari_config.rb">config/initializers/kaminari_config.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>12</td>
+        <td>10</td>
+        <td>10</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
         <td class="strong"><a href="#06b3b73a52791aa2e93270f5ac03c616bfe547c5" class="src_link" title="config/initializers/mime_types.rb">config/initializers/mime_types.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>4</td>
@@ -253,9 +273,9 @@
       <tr>
         <td class="strong"><a href="#147da90e5db27251c10639b7c4338949c5935f4d" class="src_link" title="config/routes.rb">config/routes.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>9</td>
-        <td>5</td>
-        <td>5</td>
+        <td>10</td>
+        <td>6</td>
+        <td>6</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -641,7 +661,7 @@
         <li class="covered" data-hits="2" data-linenumber="4">
           <span class="hits">2</span>
           
-          <code class="ruby">    @reviews = Review.all</code>
+          <code class="ruby">    @reviews = Review.all.page params[:page]</code>
         </li>
       
         <li class="covered" data-hits="2" data-linenumber="5">
@@ -1041,8 +1061,8 @@
     <h3>app/models/review.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>4</b> relevant lines. 
-      <span class="green"><b>4</b> lines covered</span> and
+      <b>5</b> relevant lines. 
+      <span class="green"><b>5</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -1074,7 +1094,50 @@
           <code class="ruby">  scope :creature, -&gt; (creature) { where(&quot;creature like ?&quot;, &quot;%#{creature}%&quot;)}</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="5">
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  paginates_per 5</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="e9ae5be176e48d5b528839819f0eb3017b3ba465">
+  <div class="header">
+    <h3>app/serializers/review_serializer.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>2</b> relevant lines. 
+      <span class="green"><b>2</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class ReviewSerializer &lt; ActiveModel::Serializer</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  attributes :id, :author, :content, :creature</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
           
           
           <code class="ruby">end</code>
@@ -2048,6 +2111,97 @@
 </div>
 
       
+        <div class="source_table" id="8e463e714d3fe779bb4ebe90a424341ad6c64760">
+  <div class="header">
+    <h3>config/initializers/kaminari_config.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>10</b> relevant lines. 
+      <span class="green"><b>10</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="never" data-hits="" data-linenumber="1">
+          
+          
+          <code class="ruby"># frozen_string_literal: true</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">Kaminari.configure do |config|</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  config.default_per_page = 25</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  config.max_per_page = 5</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  config.window = 4</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  config.outer_window = 0</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  config.left = 0</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  config.right = 0</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  config.page_method_name = :page</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  config.param_name = :page</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="11">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  config.params_on_first_page = false</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
         <div class="source_table" id="06b3b73a52791aa2e93270f5ac03c616bfe547c5">
   <div class="header">
     <h3>config/initializers/mime_types.rb</h3>
@@ -2199,8 +2353,8 @@
     <h3>config/routes.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>5</b> relevant lines. 
-      <span class="green"><b>5</b> lines covered</span> and
+      <b>6</b> relevant lines. 
+      <span class="green"><b>6</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -2223,40 +2377,46 @@
         <li class="covered" data-hits="1" data-linenumber="3">
           <span class="hits">1</span>
           
-          <code class="ruby">    collection do</code>
+          <code class="ruby">    get &#39;page/:page&#39;, action: :index, on: :collection</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="4">
           <span class="hits">1</span>
           
-          <code class="ruby">      get :author</code>
+          <code class="ruby">    collection do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="5">
           <span class="hits">1</span>
           
-          <code class="ruby">      get :creature</code>
+          <code class="ruby">      get :author</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="6">
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">    end</code>
+          <code class="ruby">      get :creature</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="7">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="8">
           
           
-          <code class="ruby">  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html</code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
           
           
           <code class="ruby">end</code>
@@ -3136,7 +3296,7 @@
         <li class="covered" data-hits="1" data-linenumber="10">
           <span class="hits">1</span>
           
-          <code class="ruby">    expect(JSON.parse(response.body).size).to eq(20)</code>
+          <code class="ruby">    expect(JSON.parse(response.body).size).to eq(5)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="11">
@@ -3550,16 +3710,16 @@
           <code class="ruby">    put &quot;/reviews/#{review.id}&quot;, params: { :author =&gt; &#39;nicky&#39;}</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="20">
-          
-          
-          <code class="ruby">    # expect(Review.find(review.id).author).to eq (&#39;nicky&#39;)</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="21">
+        <li class="covered" data-hits="1" data-linenumber="20">
           <span class="hits">1</span>
           
           <code class="ruby">    get &quot;/reviews/#{review.id}&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby">    # expect(Review.find(review.id).author).to eq (&#39;nicky&#39;)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="22">
