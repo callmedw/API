@@ -14,6 +14,8 @@ gem 'pg', '~> 0.18'
 gem 'puma', '~> 3.7'
 gem 'active_model_serializers', '~> 0.10.0'
 gem 'kaminari'
+gem 'rack-attack'
+
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
@@ -38,6 +40,7 @@ group :development, :test do
   gem 'shoulda-matchers'
   gem 'capybara'
   gem 'shoulda-callback-matchers'
+  gem 'rack-test', require: 'rack/test'
 end
 
 group :development do
